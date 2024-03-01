@@ -1,0 +1,5 @@
+package-lock.json
+node_module/*
+docs/.vitepress/cache/*
+docs/.vitepress/dist/*
+.vscode/*
