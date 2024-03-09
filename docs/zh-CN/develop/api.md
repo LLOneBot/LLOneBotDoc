@@ -52,7 +52,7 @@ http事件上报，不支持快捷回复等快捷操作
 | 获取 CSRF Token |  get_csrf_token | ❌ |
 | 获取 QQ 相关接口凭证 |  get_credentials | ❌ |
 | 重启 OneBot 实现 | set_restart | ❌ |
-| 清理缓存 | clean_cache | ❌ |
+| 清理缓存 | clean_cache | ✔ |
 ::: 
 
 ::: details Go-CQHTTP Api 支持情况
