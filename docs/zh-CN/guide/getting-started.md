@@ -27,6 +27,10 @@
 ```
 :::
 
+**重启 QQ 后，打开设置，看到 `LLOneBot` ，代表安装成功.**
+
+![](./img/llonebot-install-success.png)
+
 ::: tip
 注意OneBotApi 2.0以下的版本不支持LiteLoader 1.0.0及以上版本
 :::
