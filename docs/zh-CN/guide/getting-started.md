@@ -1,15 +1,33 @@
 # 快速开始
 
 ## 通用安装方法
+
+**注意在安装之前请先关闭 QQ ！**
+
 1.安装 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/guide/install.html)
 
-2.安装本项目插件 [OneBotApi](https://github.com/linyuchen/LiteLoaderQQNT-OneBotApi/releases/) 最新版本.
+推荐使用 [一键安装脚本](https://github.com/Mzdyl/LiteLoaderQQNT_Install/releases)，支持 Windows、Linux、MacOS
+
+安装成功后打开QQ的设置，看到了 `LiteLoaderQQNT` 就代表安装成功了.
+
+![](./img/llqqnt-install-success.png)
+
+
+2.安装本项目插件 [LLOneBot](https://github.com/LLOneBot/LLOneBot/releases) 最新版本.
+
 ::: tip
-注意本插件2.0以下的版本不支持LiteLoader 1.0.0及以上版本
+如果是通过一键脚本安装了 LiteLoaderQQNT ，则可以在插件商店搜索 `LLOneBot` 直接在线安装
+![](./img/install-llonebot-from-plugin-store.png)
 :::
-*关于插件的安装方法: 下载后解压复制到插件目录*
-::: details 目录结构
-*插件目录:LiteLoaderQQNT/plugins*
+
+如果是手动安装，将下载的 `LLOneBot` 插件解压放到 `plugins` 目录下，然后重启 QQ 即可.
+
+plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
+
+![](./img/open-plugins-dir.png)
+
+
+::: details 插件目录结构如下
 ```
 ├── plugins
 │   ├── LLOneBot
@@ -20,6 +38,10 @@
 │   │   └── node_modules/...
 ```
 :::
+
+**重启 QQ 后，打开设置，看到 `LLOneBot` ，代表安装成功.**
+
+![](./img/llonebot-install-success.png)
 
 ## Linux 容器化快速安装
 
