@@ -9,7 +9,7 @@
 
 安装成功后打开QQ的设置，看到了 `LiteLoaderQQNT` 就代表安装成功了.
 
-![](../../asset/img/llqqnt-install-success.png)
+![](../../asset/img/getting-started/llqqnt-install-success.png)
 
 ::: tip
 手动安装见 [LiteLoaderQQNT文档](https://liteloaderqqnt.github.io/guide/install.html)
@@ -18,13 +18,13 @@
 ::: details 安装 LLOneBot
 
 如果是通过一键脚本安装了 LiteLoaderQQNT ，则可以在插件商店搜索 `LLOneBot` 直接在线安装
-![](../../asset/img/install-llonebot-from-plugin-store.png)
+![](../../asset/img/getting-started/install-llonebot-from-plugin-store.png)
 
 如果是手动安装，将下载 [LLOneBot](https://github.com/LLOneBot/LLOneBot/releases) 最新版本 解压放到 `plugins` 目录下，然后重启 QQ 即可.
 
 ::: tip
 plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
-![](../../asset/img/open-plugins-dir.png)
+![](../../asset/img/getting-started/open-plugins-dir.png)
 
 目录结构如下:
 ```
@@ -42,7 +42,7 @@ plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
 
 **重启 QQ 后，打开设置，看到 `LLOneBot` ，代表安装成功.**
 
-![](../../asset/img/llonebot-install-success.png)
+![](../../asset/img/getting-started/llonebot-install-success.png)
 :::
 
 ## Linux 容器化快速安装
