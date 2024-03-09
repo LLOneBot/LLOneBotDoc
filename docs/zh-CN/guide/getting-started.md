@@ -30,7 +30,7 @@
 ::: details  如何确认正确安装
 **重启 QQ 后，打开设置，看到 `LLOneBot` ，代表安装成功.**
 
-![](./img/llonebot-install-success.png)
+![](/asset/img/llonebot-install-success.png)
 ::: 
 
 ::: tip
