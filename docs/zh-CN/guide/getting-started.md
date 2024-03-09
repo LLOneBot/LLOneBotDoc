@@ -5,7 +5,7 @@
 ::: details 安装LiteLoaderQQNT
 前往 [LiteLoaderQQNT](https://liteloaderqqnt.github.io/guide/install.html) 安装后,找到LiteLoader所在目录，打开后如下图。
 
-![LiteLoaderPath](/asset/LiteLoaderPath.png)
+![LiteLoaderPath](/asset/img/LiteLoaderPath.png)
 
 :::
 
@@ -27,9 +27,11 @@
 ```
 :::
 
+::: details  如何确认正确安装
 **重启 QQ 后，打开设置，看到 `LLOneBot` ，代表安装成功.**
 
 ![](./img/llonebot-install-success.png)
+::: 
 
 ::: tip
 注意OneBotApi 2.0以下的版本不支持LiteLoader 1.0.0及以上版本
