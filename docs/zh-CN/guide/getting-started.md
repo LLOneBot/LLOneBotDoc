@@ -17,10 +17,7 @@
 
 ::: details 安装 LLOneBot
 
-如果是通过一键脚本安装了 LiteLoaderQQNT ，则可以在插件商店搜索 `LLOneBot` 直接在线安装
-![](../../asset/img/getting-started/install-llonebot-from-plugin-store.png)
-
-如果是手动安装，将下载 [LLOneBot](https://github.com/LLOneBot/LLOneBot/releases) 最新版本 解压放到 `plugins` 目录下，然后重启 QQ 即可.
+下载 [LLOneBot](https://github.com/LLOneBot/LLOneBot/releases) 最新版本 解压放到 `plugins` 目录下，然后重启 QQ 即可.
 
 ::: tip
 plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
@@ -30,9 +27,9 @@ plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
 ```
 ├── plugins
 │   ├── LLOneBot
-│   │   └── main.js
-│   │   └── preload.js
-│   │   └── renderer.js
+│   │   └── main/main.cjs
+│   │   └── preload/preload.cjs
+│   │   └── renderer/index.js
 │   │   └── manifest.json
 │   │   └── node_modules/...
 ```
