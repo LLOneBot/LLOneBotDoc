@@ -46,7 +46,7 @@ plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
 ![](../../asset/img/getting-started/llonebot-install-success.png)
 :::
 
-## Linux 容器化快速安装
+## Linux docker 快速安装
 
 具体问题参考: [LLOneBot-Docker](https://github.com/MliKiowa/llonebot-docker)
 
@@ -55,6 +55,11 @@ plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
 ```sh [Curl]
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/MliKiowa/llonebot-docker/fastboot.sh)
 ```
+等docker启动完毕后
+
+浏览器访问 `http://你的docker-ip:6099/api/panel/getQQLoginQRcode` 扫码登录
+
+登录之后访问 `http://你的docker-ip:6099/plugin/LLOneBot/iframe.html` 进行 llonebot 的配置
 
 ::: 
 
@@ -67,6 +72,7 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/MliKiowa/llonebot-docker/fastboot.
 ```sh [Curl]
 bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/onekey.sh)"
 ```
+登录方法与上方 Linux docker 登录一致
 
 ::: 
 
