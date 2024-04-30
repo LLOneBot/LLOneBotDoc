@@ -52,36 +52,9 @@ plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
 ![](../../asset/img/getting-started/llonebot-install-success.png)
 :::
 
-## Linux docker 快速安装
+## Linux 安装
 
-具体问题参考: [LLOneBot-Docker](https://github.com/MliKiowa/llonebot-docker)
+由于 Linux 上的 QQ 容易出现各种问题，推荐使用最新最 in 的无头 NTQQ 框架 [NapCatQQ](https://github.com/NapNeko/NapCatQQ)
 
-::: code-group
-
-```sh [Curl]
-bash <(curl -s -L https://cdn.jsdelivr.net/gh/MliKiowa/llonebot-docker/fastboot.sh)
-```
-等docker启动完毕后
-
-浏览器访问 `http://你的docker-ip:6099/api/panel/getQQLoginQRcode` 扫码登录
-
-登录之后访问 `http://你的docker-ip:6099/plugin/LLOneBot/iframe.html` 进行 llonebot 的配置
-
-浏览器配置 LLOneBot 千万不要点那个选择 FFMPEG， 不要点！不要点！不要点！即使出现了没有 FFMPEG 的警告也不要点！！！
-
-::: 
-
-## 使用termux安装
-
-具体问题参考: [LLOneBot-Termux](https://github.com/LLOneBot/llonebot-termux)
-
-::: code-group
-
-```sh [Curl]
-bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/onekey.sh)"
-```
-登录方法与上方 Linux docker 登录一致
-
-::: 
 
 
