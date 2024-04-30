@@ -67,7 +67,7 @@ bash <(curl -s -L https://cdn.jsdelivr.net/gh/MliKiowa/llonebot-docker/fastboot.
 
 登录之后访问 `http://你的docker-ip:6099/plugin/LLOneBot/iframe.html` 进行 llonebot 的配置
 
-浏览器配置 LLOneBot 千万不要点那个选择 FFMPEG， 不要点！不要点！不要点！
+浏览器配置 LLOneBot 千万不要点那个选择 FFMPEG， 不要点！不要点！不要点！即使出现了没有 FFMPEG 的警告也不要点！！！
 
 ::: 
 
