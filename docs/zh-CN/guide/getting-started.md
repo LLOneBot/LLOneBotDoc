@@ -54,7 +54,11 @@ plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开.
 
 ## Linux 安装
 
-由于 Linux 上的 QQ 容易出现各种问题，推荐使用最新最 in 的无头 NTQQ 框架 [NapCatQQ](https://github.com/NapNeko/NapCatQQ)
+Linux 安装方法与 Windows 类似，只是需要手动安装 LiteLoaderQQNT
+
+如果非要使用 docker 安装 LLOneBot，参考 <https://github.com/LLOneBot/llonebot-docker>
+
+如果你的 Linux 上的 QQ 出现各种问题了，推荐使用兼容性更好的，最新最 in 的无头 NTQQ 框架 [NapCatQQ](https://github.com/NapNeko/NapCatQQ)
 
 
 
