@@ -1,8 +1,4 @@
-import { createRequire } from 'module'
-import { defineConfig, type DefaultTheme } from 'vitepress'
-
-const require = createRequire(import.meta.url)
-const pkg = require('vitepress/package.json')
+import { defineConfig } from 'vitepress'
 
 export const zhCN = defineConfig({
     lang: 'zh-CN',
@@ -62,7 +58,7 @@ function sidebarGuide() {
                 { text: '快速开始', link: 'guide/getting-started', activeMatch: '/zh-CN/guide/' },
                 { text: '对接配置', link: 'guide/configuration', activeMatch: '/zh-CN/guide/' },
                 { text: '常见问题', link: 'guide/faq', activeMatch: '/zh-CN/guide/' },
-                { text: '从零安装nonebot2', link: 'guide/nonebot2', activeMatch: '/zh-CN/guide/' }
+                { text: '从零安装 NoneBot2', link: 'guide/nonebot2', activeMatch: '/zh-CN/guide/' }
             ]
         }, {
             text: '进阶配置',
@@ -79,10 +75,10 @@ function sidebarDevelop() {
             collapsed: false,
             items: [
                 { text: '快速开始', link: 'develop/quick-start', activeMatch: '/zh-CN/develop/' },
-                { text: 'API列表', link: 'develop/api', activeMatch: '/zh-CN/develop/api' },
+                { text: 'API 列表', link: 'develop/api', activeMatch: '/zh-CN/develop/api' },
                 { text: '上报事件', link: 'develop/event', activeMatch: '/zh-CN/develop/event' },
                 { text: '消息类型', link: 'develop/msg', activeMatch: '/zh-CN/develop/msg' },
-                { text: '扩展API', link: 'develop/extends_api', activeMatch: '/zh-CN/develop/extends_api' },
+                { text: '扩展 API', link: 'develop/extends_api', activeMatch: '/zh-CN/develop/extends_api' },
             ]
         }
     ];
