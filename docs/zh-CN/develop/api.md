@@ -1,10 +1,6 @@
 # API 列表
 
-## API 详细说明
-
-[onebot v11](https://11.onebot.dev/)
-
-[go-cqhttp](https://docs.go-cqhttp.org/api)
+LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 
 ## 连接方式支持情况
 | 连接方式           |可用|
@@ -18,6 +14,11 @@
 ## API 支持情况
 
 ### OneBot 11
+
+::: tip
+详细用法参阅 [OneBot 11 文档](https://github.com/botuniverse/onebot-11/blob/master/api/public.md)
+:::
+
 | 功能 |     API    |可用| 备注 |
 | --- | -------------  |:--:| -------------- | 
 | 获取 bot 账号信息 |   get_login_info | ✔ | |
@@ -60,6 +61,11 @@
 | 清理缓存 | clean_cache | ✔ |
 
 ### Go-CQHTTP
+
+::: tip
+详细用法参阅 [go-cqhttp 文档](https://docs.go-cqhttp.org/api/)
+:::
+
 | 功能 |     API    |可用|
 | --- | -------------  |:--:|
 | 发送合并转发 ( 好友 ) | send_private_forward_msg | ✔ |
@@ -87,6 +93,11 @@
 | 图片 OCR | ocr_image | ✔ |
 
 ### LLOneBot
+
+::: tip
+详细用法参阅 [扩展 API](./extends_api.md)
+:::
+
 | 功能 |     API    |可用|
 | --- | -------------  |:--:|
 | 设置头像 | set_qq_avatar | ✔ |
