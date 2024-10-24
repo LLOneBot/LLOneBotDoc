@@ -1,5 +1,4 @@
-
-### 扩展api
+# 扩展 API
 
 ::: details 发送文件名自定义
 发送文件时支持参数 `name` 用于自定义显示的文件名
@@ -33,8 +32,7 @@
 ```
 :::
 
-::: details 设置头像api
-`/set_qq_avatar`
+::: details 设置头像 `/set_qq_avatar`
 ```json5
 {
   "file": "file://D:/1.jpg"  // 支持http://, base64://
@@ -42,9 +40,7 @@
 ```
 :::
 
-::: details 获取已过滤的加群通知
-
-`/get_group_ignore_add_request`
+::: details 获取已过滤的加群通知 `/get_group_ignore_add_request`
 
 return
 
@@ -69,9 +65,7 @@ return
 相比于 go-cq 多了个 `target_id` 字段表示发送的目标QQ号或者群号
 :::
 
-::: details 下载收到的群文件或私聊文件
-
-`/get_file`
+::: details 下载收到的群文件或私聊文件 `/get_file`
 
 ```json5
 {
@@ -97,13 +91,14 @@ return
 ```
 :::
 
-::: details /download_file
-与 gocq 用法一样，但是支持 base64 参数用于直接下载 base64 编码的文件
+::: details 支持 base64 参数用于直接下载 base64 编码的文件
+
+`/download_file`
 
 ::: tip 此 api 不适用于下载群文件或者私聊文件
 :::
 
-::: details 转发单条消息到好友 /forward_friend_single_msg
+::: details 转发单条消息到好友 `/forward_friend_single_msg`
     
 ```json5
 {
@@ -114,7 +109,7 @@ return
 :::
 
 
-::: details 转发单条消息到群 /forward_group_single_msg
+::: details 转发单条消息到群 `/forward_group_single_msg`
 
 ```json5
 {
@@ -124,7 +119,7 @@ return
 ```
 :::
 
-::: details 发送表情回应 /set_msg_emoji_like
+::: details 发送表情回应 `/set_msg_emoji_like`
 ```json5
 {
     "message_id": "-2147480026",
@@ -134,7 +129,7 @@ return
 emoji_id 参考 <https://bot.q.qq.com/wiki/develop/api-v2/openapi/emoji/model.html#EmojiType>
 :::
 
-::: details 获取带分组信息好友列表 /get_friends_with_category
+::: details 获取带分组信息好友列表 `/get_friends_with_category`
 
 return:
 ```json5
@@ -190,4 +185,59 @@ return:
   ]
 }
 ```
+:::
+
+::: details 设置自身在线状态 `/set_online_status`
+
+在线:
+```json
+{ "status": 10, "ext_status": 0, "battery_status": 0 }
+```
+离开:
+```json
+{ "status": 30, "ext_status": 0, "battery_status": 0 }
+```
+隐身:
+```json
+{ "status": 40, "ext_status": 0, "battery_status": 0 }
+```
+忙碌:
+```json
+{ "status": 50, "ext_status": 0, "battery_status": 0 }
+```
+Q我吧:
+```json
+{ "status": 60, "ext_status": 0, "battery_status": 0 }
+```
+请勿打扰:
+```json
+{ "status": 70, "ext_status": 0, "battery_status": 0 }
+```
+:::
+
+::: details 获取自身点赞列表 `/get_profile_like`
+
+请求时无需参数
+
+:::
+
+::: details 好友戳一戳 `/friend_poke`
+
+```json
+{
+    "user_id": 123456
+}
+```
+
+:::
+
+::: details 群组戳一戳 `/group_poke`
+
+```json
+{
+    "group_id": 123456,
+    "user_id": 123456
+}
+```
+
 :::
