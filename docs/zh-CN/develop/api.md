@@ -93,6 +93,7 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 获取群公告 | _get_group_notice | ✔ |
 | 删除好友 | delete_friend | ✔ |
 | 图片 OCR | ocr_image | ✔ |
+| 获取群文件系统信息 | get_group_file_system_info | ✔ |
 
 ### LLOneBot
 
