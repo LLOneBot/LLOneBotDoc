@@ -2,7 +2,7 @@
 
 LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 
-接口详细示例: [点击跳转](https://api.napneko.com)
+接口详细示例: [点击跳转](https://llonebot.apifox.cn)
 
 ## 连接方式支持情况
 | 连接方式           |可用|
