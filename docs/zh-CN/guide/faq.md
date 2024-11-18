@@ -1,5 +1,9 @@
 # FAQ
 ## 常见问题
+::: details 版本 28060+ 的 QQ 不显示插件
+请确保 LiteLoaderQQNT 版本大于或等于 [1.2.2](https://github.com/LiteLoaderQQNT/LiteLoaderQQNT/releases/tag/1.2.2)
+:::
+
 ::: details 下载了插件但是没有看到在 NTQQ 中生效
 检查是否下载的是插件 release 的版本，如果是源码的话需要自行编译。依然不生效请查阅 LiteLoaderQQNT 的文档。
 ::: 
