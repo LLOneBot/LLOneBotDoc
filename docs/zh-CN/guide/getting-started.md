@@ -48,9 +48,13 @@ plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开
 ![](../../asset/img/getting-started/llonebot-install-success.png)
 :::
 
-## Linux 安装
+## Linux 手动安装
 
 Linux 安装方法与 Windows 类似，只是需要手动安装 LiteLoaderQQNT
+
+## Linux docker 安装
+
+参考 <https://github.com/LLOneBot/llonebot.nix>
 
 ## 下一步
 
