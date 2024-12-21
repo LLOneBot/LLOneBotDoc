@@ -2,7 +2,7 @@
 
 LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 
-接口详细示例: [点击跳转](https://api.napneko.com)
+接口详细示例: [点击跳转](https://llonebot.apifox.cn)
 
 ## 连接方式支持情况
 | 连接方式           |可用|
@@ -98,14 +98,13 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 ### LLOneBot
 
 ::: tip
-详细用法参阅 <https://api.napneko.com>
+详细用法参阅 <https://llonebot.apifox.cn>
 :::
 
 | 功能             | API                          |可用|
 |----------------|------------------------------|:--:|
 | 设置头像           | set_qq_avatar                | ✔ |
 | 获取文件信息         | get_file                     | ✔ |
-| 获取已过滤的加群通知     | get_group_ignore_add_request | ✔ |
 | 转发单条信息到私聊      | forward_friend_single_msg    | ✔ |
 | 转发单条信息到群聊      | forward_group_single_msg     | ✔ |
 | 设置消息的表情回应      | set_msg_emoji_like           | ✔ |
