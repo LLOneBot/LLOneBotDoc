@@ -18,7 +18,7 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 ### OneBot 11
 
 ::: tip
-详细用法参阅 [OneBot 11 文档](https://github.com/botuniverse/onebot-11/blob/master/api/public.md)
+详细用法参阅 [OneBot 11 文档](https://github.com/botuniverse/onebot-11/blob/master/api/public.md) 或 [go-cqhttp 文档](https://docs.go-cqhttp.org/api/)
 :::
 
 | 功能         |     API    | 可用 | 备注 |
