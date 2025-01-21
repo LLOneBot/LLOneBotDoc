@@ -103,7 +103,7 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 :::
 
 | 功能             | API                          |可用|
-|----------------|------------------------------|:--:|
+|------------------|------------------------------|:--:|
 | 设置头像           | set_qq_avatar                | ✔ |
 | 获取文件信息         | get_file                     | ✔ |
 | 转发单条信息到私聊      | forward_friend_single_msg    | ✔ |
@@ -113,8 +113,8 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 设置自身在线状态       | set_online_status            | ✔ |
 | 获取自身点赞列表       | get_profile_like             | ✔ |
 | 发送合并转发消息       | send_forward_msg             | ✔ |
-| 获取收藏表情         | fetch_custom_face            | ✔ |
-| 获取好友历史消息记录     | get_friend_msg_history       | ✔ |
+| 获取收藏表情          | fetch_custom_face            | ✔ |
+| 获取好友历史消息记录    | get_friend_msg_history       | ✔ |
 | 获取表情回应列表       | fetch_emoji_like             | ✔ |
 | 获取官方机器人 QQ 号区间 | get_robot_uin_range          | ✔ |
 | 好友戳一戳          | friend_poke                  | ✔ |
@@ -122,4 +122,5 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 设置好友备注         | set_friend_remark            | ✔ |
 | 移动好友到分组        | set_friend_category          | ✔ |
 | 设置群备注          | set_group_remark             | ✔ |
-| 设置群消息接收方式      | set_group_msg_mask           | ✔ |
+| 设置群消息接收方式    | set_group_msg_mask           | ✔ |
+| 移动群文件           | move_group_file           | ✔ |
