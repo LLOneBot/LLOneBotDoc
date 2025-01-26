@@ -124,3 +124,5 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 设置群备注          | set_group_remark             | ✔ |
 | 设置群消息接收方式    | set_group_msg_mask           | ✔ |
 | 移动群文件           | move_group_file           | ✔ |
+| 获取群禁言列表       | get_group_shut_list           | ✔ |
+| 重命名群文件文件夹名  | rename_group_file_folder      | ✔ |
