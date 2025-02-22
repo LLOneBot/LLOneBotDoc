@@ -4,7 +4,9 @@ LLOneBot 支持最新版本的 QQ。不推荐使用太老的版本，因其可�
 
 ## Windows 一键安装方案
 
-<https://github.com/super1207/install_llob/releases> 下载 exe，双击运行即可，之后打开 QQ 的设置，看到了 `LLOneBot` 就代表安装成功了。
+方案 1：整合包 <https://github.com/LLOneBot/LLOneBot/releases> 下载解压，双击 QQ.exe 即可运行带有 LLOneBot 的QQ
+
+方案 2：已经安装了 NTQQ ，下载 <https://github.com/super1207/install_llob/releases> exe，双击运行即可，之后打开 QQ 的设置，看到了 `LLOneBot` 就代表安装成功了。
 
 ## 通用安装方法
 
