@@ -42,6 +42,8 @@ node llonebot.js --pmhq-host=127.0.0.1 --pmhq-port=13000
 
 ## LLOneBot 配置文件
 
+修改后会自动重载，无需重启 QQ 和 LLOneBot
+
 ```json5
 {
   "satori": {
