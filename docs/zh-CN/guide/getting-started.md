@@ -4,59 +4,76 @@ LLOneBot 支持最新版本的 QQ。不推荐使用太老的版本，因其可�
 
 ## Windows 一键安装方案
 
-方案 1：整合包 <https://github.com/LLOneBot/LLOneBot/releases> 下载解压，双击 QQ.exe 即可运行带有 LLOneBot 的QQ
+首先确认你已经安装了 [NTQQ](https://im.qq.com)
 
-方案 2：已经安装了 NTQQ ，下载 <https://github.com/super1207/install_llob/releases> exe，双击运行即可，之后打开 QQ 的设置，看到了 `LLOneBot` 就代表安装成功了。
+如果以前装过 LLOneBot5.0 以下版本，请卸载 QQ 并删干净 QQ 目录，否则有掉线风险
 
-## 通用安装方法
+到 [release 页面](https://github.com/LLOneBot/LLOneBot/releases) 下载 LLOneBot-win-x64.zip 或 LLOneBot-win-x64-ffmpeg.zip，
 
-::: details 安装 LiteLoaderQQNT
-**注意在安装之前先关闭 QQ！**
+其中 `LLOneBot-win-x64.zip` 是不包含 FFmpeg 的版本，`LLOneBot-win-x64-ffmpeg.zip` 是包含 FFmpeg 的版本，
 
-推荐使用 [一键安装脚本](https://github.com/Mzdyl/LiteLoaderQQNT_Install/releases)，支持 Windows、Linux、MacOS
+推荐使用包含 FFmpeg 的版本。
 
-安装成功后打开 QQ 的设置，看到了 `LiteLoaderQQNT` 就代表安装成功了
+解压后双击 `llonebot.exe` 会启动 QQ，登录后会在 llonebot.exe 所在目录生成一个 data 文件夹，
 
-![](../../asset/img/getting-started/llqqnt-install-success.png)
+修改`data/config_<qq号>.json` 文件，进行配置。
 
-::: tip
-手动安装见 [LiteLoaderQQNT文档](https://liteloaderqqnt.github.io/guide/install.html)
-:::
+配置文件具体内容往下翻。
 
-::: details 安装 LLOneBot
+## Linux 一键 docker 安装方案
 
-下载 [LLOneBot](https://github.com/LLOneBot/LLOneBot/releases) 最新版本 解压放到 `plugins` 目录下，然后重启 QQ 即可
+## 通用手动安装方法
 
-::: tip
-plugins 目录可以在 LiteLoaderQQNT 的页面找到并一键打开
-![](../../asset/img/getting-started/open-plugins-dir.png)
+下载 [pmhq](https://github.com/linyuchen/PMHQ/releases)
 
-目录结构如下:
+运行 pmhq 后会启动 QQ 并生成配置文件 `pmhq_config.json`
+
+`pmhq_config.json` 的 `default_host` 和 `default_port` 是用来和 LLOneBot 通信的，我们需要记下两个参数
+
+再下载 [LLOneBot.zip](https://github.com/LLOneBot/LLOneBot/releases)
+
+解压后可以看到它是一个 nodejs 包，使用 node 运行 `llonebot.js`，并把刚刚的 pmhq host 和 port 传进去
+```shell
+node llonebot.js --pmhq-host=127.0.0.1 --pmhq-port=13000
 ```
-├── plugins
-│   ├── LLOneBot
-│   │   └── main/main.cjs
-│   │   └── preload/preload.cjs
-│   │   └── renderer/index.js
-│   │   └── manifest.json
-│   │   └── node_modules/...
+登录 QQ 后 LLOneBot 就会显示连接上了
+
+## LLOneBot 配置文件
+
+```json5
+{
+  "satori": {
+    "enable": true,  // 是否启用 Satori 协议
+    "port": 5600,  // Satori 监听端口
+    "token": "" // Satori token
+  },
+  "ob11": {
+    "enable": true, // 是否启用 OneBot 11 协议
+    "token": "", // OneBot 11 协议的 token
+    "httpPort": 3000, // HTTP 监听端口
+    "httpPostUrls": [],  // HTTP 上报地址，如 ["http://localhost:8080/onebot/v11"]
+    "httpSecret": "",  // HTTP 上报密钥
+    "wsPort": 3001, // 正向 WebSocket 监听端口
+    "wsReverseUrls": [], // 反向 WebSocket 地址，如 ["ws://localhost:8080/onebot/v11/ws"]
+    "enableHttp": true, // 是否启用 HTTP 服务
+    "enableHttpPost": true, // 是否启用 HTTP 上报
+    "enableWs": true, // 是否启用正向 WebSocket 服务
+    "enableWsReverse": false, // 是否启用反向 WebSocket 服务
+    "messagePostFormat": "array", // 消息上报格式，支持 "array" 或 "string"
+    "enableHttpHeart": false, // 是否启用 HTTP 心跳
+    "reportSelfMessage": true // 是否上报自己的消息
+  },
+  "heartInterval": 60000, // 心跳间隔，单位毫秒
+  "enableLocalFile2Url": false, // 是否启用本地文件转 URL 功能
+  "debug": false, // 是否启用调试模式
+  "log": true, // 是否启用日志
+  "autoDeleteFile": false, // 是否自动删除收到的文件
+  "autoDeleteFileSecond": 60, // 自动删除收到的文件的时间，单位秒
+  "musicSignUrl": "", // 音乐签名地址
+  "msgCacheExpire": 120, // 消息缓存过期时间，单位秒
+  "onlyLocalhost": true, // 是否只监听本地地址，否则监听公网地址，暴露在公网请务必设置 token
+}
 ```
-:::
-
-::: details 检查是否安装成功
-
-重启 QQ 后，打开设置，看到 `LLOneBot` ，代表安装成功
-
-![](../../asset/img/getting-started/llonebot-install-success.png)
-:::
-
-## Linux 手动安装
-
-Linux 安装方法与 Windows 类似，只是需要手动安装 LiteLoaderQQNT
-
-## Linux docker 安装
-
-参考 <https://github.com/LLOneBot/llonebot.nix>
 
 ## 下一步
 

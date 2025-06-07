@@ -67,8 +67,7 @@ function sidebarGuide() {
       text: '进阶配置',
       collapsed: false,
       items: [
-        {text: '配置 FFmpeg', link: 'guide/ffmpeg', activeMatch: '/en-US/guide/'},
-        {text: '配置 发包器', link: 'guide/pmhq', activeMatch: '/en-US/guide/'}
+        {text: '配置 FFmpeg', link: 'guide/ffmpeg', activeMatch: '/en-US/guide/'}
       ]
 
     }
