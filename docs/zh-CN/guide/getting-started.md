@@ -21,7 +21,9 @@ LLOneBot 支持最新版本的 QQ。不推荐使用太老的版本，因其可�
 配置文件具体内容往下翻。
 
 ## Linux 一键 docker 安装方案
-
+```shell
+curl -fsSL https://gh-proxy.com/https://raw.githubusercontent.com/linyuchen/PMHQ/refs/heads/main/docker/install-llob.sh -o install-pmhq-llob.sh && ./install-pmhq-llob.sh
+```
 ## 通用手动安装方法
 
 下载 [pmhq](https://github.com/linyuchen/PMHQ/releases)
