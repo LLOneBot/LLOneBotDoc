@@ -42,9 +42,9 @@ node llonebot.js --pmhq-host=127.0.0.1 --pmhq-port=13000
 
 ## LLOneBot 配置文件
 
-修改后会自动重载，无需重启 QQ 和 LLOneBot
-
 配置文件是自动生成的，**请不要直接复制下面全部内容粘贴进去，带 // 的注释会解析不了**
+
+修改后会自动重载，无需重启 QQ 和 LLOneBot
 
 ```json5
 {
