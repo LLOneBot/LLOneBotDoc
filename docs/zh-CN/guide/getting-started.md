@@ -24,6 +24,11 @@ LLOneBot 支持最新版本的 QQ。注意要用原版的 QQ ，不要安装任�
 ```shell
 curl -fsSL https://raw.githubusercontent.com/linyuchen/PMHQ/refs/heads/main/docker/install-llob.sh -o install-pmhq-llob.sh && chmod u+x ./install-pmhq-llob.sh && ./install-pmhq-llob.sh
 ```
+
+## Linux 使用 NixOS/Docker 安装
+
+见 <https://github.com/llonebot/llonebot.nix>
+
 ## 通用手动安装方法
 
 下载 [pmhq](https://github.com/linyuchen/PMHQ/releases)
@@ -42,7 +47,7 @@ node llonebot.js --pmhq-host=127.0.0.1 --pmhq-port=13000
 
 ## LLOneBot 配置文件
 
-配置文件是自动生成的，**请不要直接复制下面全部内容粘贴进去，带 // 的注释会解析不了**
+配置文件是自动生成的
 
 修改后会自动重载，无需重启 QQ 和 LLOneBot
 
