@@ -31,10 +31,9 @@ LLOneBot 支持最新版本的 QQ。注意要用原版的 QQ ，不要安装任�
 curl -fsSL https://raw.githubusercontent.com/linyuchen/PMHQ/refs/heads/main/docker/install-llob.sh -o install-pmhq-llob.sh && chmod u+x ./install-pmhq-llob.sh && ./install-pmhq-llob.sh
 ```
 
-[//]: # (## Linux 使用 NixOS/Docker 安装)
+## Linux 使用 NixOS/Docker 安装
 
-[//]: # ()
-[//]: # (见 <https://github.com/llonebot/llonebot.nix>)
+见 <https://github.com/llonebot/llonebot.nix>
 
 ## 通用手动安装方法
 
