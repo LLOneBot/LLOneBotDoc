@@ -4,7 +4,7 @@ LLOneBot 支持最新版本的 QQ。注意要用原版的 QQ ，不要安装任�
 
 ## Windows 一键安装方案
 
-** 只支持 Windows 8.1(Windows server 2012 R2) 及以上版本 **
+**只支持 Windows 8.1(Windows server 2012 R2) 及以上版本**
 
 首先确认你已经安装了 [NTQQ](https://im.qq.com)
 
@@ -20,7 +20,7 @@ LLOneBot 支持最新版本的 QQ。注意要用原版的 QQ ，不要安装任�
 
 解压后双击 `llonebot.exe` 会启动 QQ，登录后会在 llonebot.exe 所在目录生成一个 data 文件夹，
 
-** 注意在登录的时候不能勾选多个账号，LLOneBot 不支持这种登录方式 **
+**注意在登录的时候不能勾选多个账号，LLOneBot 不支持这种登录方式**
 
 修改`data/config_<qq号>.json` 文件，进行配置。
 
