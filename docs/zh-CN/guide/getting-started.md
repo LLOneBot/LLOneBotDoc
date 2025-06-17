@@ -6,7 +6,7 @@ LLOneBot 支持最新版本的 QQ。注意要用原版的 QQ ，不要安装任�
 
 **只支持 Windows 8.1(Windows server 2012 R2) 及以上版本**
 
-首先确认你已经安装了 [NTQQ](https://im.qq.com)
+首先确认你已经安装了 [64 位的 NTQQ](https://im.qq.com)
 
 如果以前装过 LLOneBot5.0 以下版本，请卸载 QQ 并删干净 QQ 目录，否则有掉线风险
 
