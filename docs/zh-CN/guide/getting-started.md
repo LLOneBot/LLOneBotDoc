@@ -22,7 +22,9 @@ LLOneBot 支持最新版本的 QQ。注意要用原版的 QQ ，不要安装任�
 
 **注意在登录的时候不能勾选多个账号，LLOneBot 不支持这种登录方式**
 
-修改`data/config_<qq号>.json` 文件，进行配置。
+浏览器打开 `http://localhost:3080` 进行配置，
+
+也可修改`data/config_<qq号>.json` 文件，进行配置。
 
 配置文件具体内容往下翻。
 
@@ -49,7 +51,11 @@ curl -fsSL https://raw.githubusercontent.com/linyuchen/PMHQ/refs/heads/main/dock
 ```shell
 node llonebot.js --pmhq-host=127.0.0.1 --pmhq-port=13000
 ```
-登录 QQ 后 LLOneBot 就会显示连接上了
+登录 QQ 后 LLOneBot 就会显示连接上了，
+
+浏览器打开 `http://localhost:3080` 进行配置，
+
+也可修改`data/config_<qq号>.json` 文件，进行配置。
 
 ## LLOneBot 配置文件
 
@@ -59,6 +65,11 @@ node llonebot.js --pmhq-host=127.0.0.1 --pmhq-port=13000
 
 ```json5
 {
+   "webui": {
+    "enable": true,  // 是否启用 WebUI
+    "port": 3080, // WebUI 监听端口
+    "token": "" // WebUI 的访问 密码，留空时首次访问会要求设置密码
+  }, 
   "satori": {
     "enable": true,  // 是否启用 Satori 协议
     "port": 5600,  // Satori 监听端口
