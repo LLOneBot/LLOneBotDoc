@@ -100,6 +100,7 @@ node llonebot.js --pmhq-host=127.0.0.1 --pmhq-port=13000
   "musicSignUrl": "", // 音乐签名地址
   "msgCacheExpire": 120, // 消息缓存过期时间，单位秒
   "onlyLocalhost": true, // 是否只监听本地地址，否则监听公网地址，暴露在公网请务必设置 token
+  "ffmpeg": "/tmp/ffmpeg", // FFmpeg 路径
 }
 ```
 
