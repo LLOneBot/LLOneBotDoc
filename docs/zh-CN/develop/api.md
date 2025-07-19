@@ -95,6 +95,7 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 上传私聊文件 | upload_private_file | ✔ |
 | 下载文件到缓存目录 | download_file | ✔ |
 | 对事件执行快速操作 | .handle_quick_operation | ✔ |
+| 设置群组专属头衔 | set_group_special_title | ✔ |
 
 ### LLOneBot
 
@@ -123,6 +124,12 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 移动好友到分组        | set_friend_category          | ✔ |
 | 设置群备注          | set_group_remark             | ✔ |
 | 设置群消息接收方式    | set_group_msg_mask           | ✔ |
-| 移动群文件           | move_group_file           | ✔ |
+| 移动群文件           | move_group_file             | ✔ |
 | 获取群禁言列表       | get_group_shut_list           | ✔ |
 | 重命名群文件文件夹名  | rename_group_file_folder      | ✔ |
+| 取消消息表情回应     | unset_msg_emoji_like         | ✔ |
+| 戳一戳              | send_poke                    | ✔ |
+| 语音消息转文本      | voice_msg_to_text            | ✔ |
+| 获取 rkey          | get_rkey                     | ✔ |
+| 上传闪传文件        | upload_flash_file            | ✔ |
+| 下载闪传文件        | download_flash_file          | ✔ |
