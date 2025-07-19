@@ -60,6 +60,7 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 获取版本信息     |   get_version_info | ✔ |
 | 重启      | set_restart | ✔ |
 | 清理缓存       | clean_cache | ✔ |
+| 设置群组专属头衔 | set_group_special_title | ✔ |
 
 ### Go-CQHTTP
 
@@ -95,7 +96,6 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 上传私聊文件 | upload_private_file | ✔ |
 | 下载文件到缓存目录 | download_file | ✔ |
 | 对事件执行快速操作 | .handle_quick_operation | ✔ |
-| 设置群组专属头衔 | set_group_special_title | ✔ |
 
 ### LLOneBot
 
