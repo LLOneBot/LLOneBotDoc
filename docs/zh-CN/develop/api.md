@@ -133,5 +133,6 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 获取 rkey          | get_rkey                     | ✔ |
 | 上传闪传文件        | upload_flash_file            | ✔ |
 | 下载闪传文件        | download_flash_file          | ✔ |
-| 获取指定词汇推荐的表情 | get_recommend_face         | ✔ |
+| 获取闪传文件详情    | get_flash_file_info          | ✔ |
+| 获取推荐表情        | get_recommend_face           | ✔ |
 | 批量踢出群成员      | batch_delete_group_member    | ✔ |
