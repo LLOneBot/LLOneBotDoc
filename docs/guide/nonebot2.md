@@ -132,6 +132,12 @@ COMMAND_SEP=["."]  # 配置命令分割字符
 }
 ```
 
+
+注：使用[Linux 一键 Docker 安装方案](https://llonebot.com/zh-CN/guide/getting-started#linux-%E4%B8%80%E9%94%AE-docker-%E5%AE%89%E8%A3%85%E6%96%B9%E6%A1%88)时需对脚本运行目录下 docker-compose.yml 配置文件进行以下修改
+```
+- ONEBOT_WS_URLS=["ws://172.17.0.1:8080/onebot/v11/ws"]
+```
+
 ​	显示一个bot QQ 链接说明成功！
 
 **到此完成！鼓掌祝贺**

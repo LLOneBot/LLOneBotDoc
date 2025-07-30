@@ -60,6 +60,7 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 获取版本信息     |   get_version_info | ✔ |
 | 重启      | set_restart | ✔ |
 | 清理缓存       | clean_cache | ✔ |
+| 设置群组专属头衔 | set_group_special_title | ✔ |
 
 ### Go-CQHTTP
 
@@ -123,6 +124,15 @@ LLOneBot 实现了 OneBot 11 以及 go-cqhttp 的大部分 API
 | 移动好友到分组        | set_friend_category          | ✔ |
 | 设置群备注          | set_group_remark             | ✔ |
 | 设置群消息接收方式    | set_group_msg_mask           | ✔ |
-| 移动群文件           | move_group_file           | ✔ |
+| 移动群文件           | move_group_file             | ✔ |
 | 获取群禁言列表       | get_group_shut_list           | ✔ |
 | 重命名群文件文件夹名  | rename_group_file_folder      | ✔ |
+| 取消消息表情回应     | unset_msg_emoji_like         | ✔ |
+| 戳一戳              | send_poke                    | ✔ |
+| 语音消息转文本      | voice_msg_to_text            | ✔ |
+| 获取 rkey          | get_rkey                     | ✔ |
+| 上传闪传文件        | upload_flash_file            | ✔ |
+| 下载闪传文件        | download_flash_file          | ✔ |
+| 获取闪传文件详情    | get_flash_file_info          | ✔ |
+| 获取推荐表情        | get_recommend_face           | ✔ |
+| 批量踢出群成员      | batch_delete_group_member    | ✔ |
