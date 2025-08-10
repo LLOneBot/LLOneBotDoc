@@ -9,9 +9,7 @@ export const docs = defineConfig({
 
     sidebar: {
       '/guide/': {base: '/', items: sidebarGuide()},
-      '/develop/': {base: '/', items: sidebarDevelop()},
       '/zh-CN/guide/': {base: '/zh-CN/', items: sidebarGuide()},
-      '/zh-CN/develop/': {base: '/zh-CN/', items: sidebarDevelop()}
     },
 
     editLink: {
@@ -47,8 +45,7 @@ export const docs = defineConfig({
 
 function nav() {
   return [
-    {text: '指南', link: '/guide/getting-started'},
-    {text: '开发', link: '/develop/quick-start'}
+    // {text: '指南', link: '/guide/getting-started'},
   ];
 }
 
@@ -60,33 +57,15 @@ function sidebarGuide() {
       items: [
         {text: '快速开始', link: 'guide/getting-started', activeMatch: '/guide/'},
         {text: '对接配置', link: 'guide/configuration', activeMatch: '/guide/'},
-        {text: '开发对接', link: 'develop/quick-start', activeMatch: '/develop/quick-start'},
-        {text: 'API 示例', link: 'develop/api', activeMatch: '/develop/api'},
         {text: '常见问题', link: 'guide/faq', activeMatch: '/guide/'},
-        {text: '从零安装 NoneBot2', link: 'guide/nonebot2', activeMatch: '/guide/'}
+        {text: '配置 FFmpeg', link: 'guide/ffmpeg', activeMatch: '/guide/'},
+        {text: '从零安装 NoneBot2', link: 'guide/nonebot2', activeMatch: '/guide/'},
       ]
     }, {
       text: '进阶配置',
       collapsed: false,
       items: [
-        {text: '配置 FFmpeg', link: 'guide/ffmpeg', activeMatch: '/guide/'}
-      ]
-
-    }
-  ];
-}
-
-function sidebarDevelop() {
-  return [
-    {
-      text: '开发信息',
-      collapsed: false,
-      items: [
-        {text: '快速开始', link: 'develop/quick-start', activeMatch: '/develop/'},
-        {text: 'API 列表', link: 'develop/api', activeMatch: '/develop/api'},
-        {text: '上报事件', link: 'develop/event', activeMatch: '/develop/event'},
-        {text: '消息类型', link: 'develop/msg', activeMatch: '/develop/msg'},
-        {text: '扩展 API', link: 'develop/extends_api', activeMatch: '/develop/extends_api'},
+        {text: '开发对接', link: 'guide/develop', activeMatch: '/guide/develop'},
       ]
     }
   ];
